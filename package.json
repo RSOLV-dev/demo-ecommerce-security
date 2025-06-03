@@ -1,0 +1,10 @@
+{
+  "name": "demo-ecommerce",
+  "version": "1.0.0",
+  "description": "E-commerce platform with authentication",
+  "main": "index.js",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "express": "^4.18.2"
+  }
+}
