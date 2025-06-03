@@ -1,0 +1,30 @@
+name: RSOLV Automatic Fix
+
+on:
+  issues:
+    types: [opened, labeled]
+  workflow_dispatch:
+
+jobs:
+  rsolv-fix:
+    runs-on: ubuntu-latest
+    # Only run if the issue has the rsolv:automate label
+    if: contains(github.event.issue.labels.*.name, 'rsolv:automate')
+    
+    permissions:
+      issues: write
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Run RSOLV
+        uses: RSOLV-dev/rsolv-action@main
+        with:
+          api_key: ${{ secrets.RSOLV_API_KEY }}
+          issue_label: 'rsolv:automate'
+          enable_security_analysis: 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
