@@ -29,3 +29,4 @@ jobs:
           enable_security_analysis: 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RSOLV_CONTAINER_ENABLED: 'false'
