@@ -24,6 +24,7 @@ jobs:
         uses: RSOLV-dev/rsolv-action@main
         with:
           api_key: ${{ secrets.RSOLV_API_KEY }}
+          api_url: 'https://api.rsolv.dev'  # Fix production URL
           issue_label: 'rsolv:automate'
           enable_security_analysis: 'true'
         env:
