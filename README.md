@@ -1,12 +1,11 @@
-# Demo E-commerce Platform
+# Demo E-commerce Security
 
-This is a demo e-commerce platform processing $10M in daily transactions.
+A demonstration repository for RSOLV security analysis and automated fixing.
 
-## Security Notice
-Our security team has identified potential vulnerabilities that need immediate attention.
+## Overview
 
-## Setup
-```bash
-npm install
-npm start
-```
+This is a simulated e-commerce authentication system with intentional security vulnerabilities for demonstration purposes.
+
+## ⚠️ WARNING
+
+This code contains intentional security vulnerabilities for demonstration purposes only. DO NOT use in production.
