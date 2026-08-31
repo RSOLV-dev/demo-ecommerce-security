@@ -9,3 +9,5 @@ This is a simulated e-commerce authentication system with intentional security v
 ## ⚠️ WARNING
 
 This code contains intentional security vulnerabilities for demonstration purposes only. DO NOT use in production.
+
+<!-- Security scan triggered at 2026-08-31 17:01:10 -->
